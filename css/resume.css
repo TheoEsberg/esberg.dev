@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+:root {
+    /* FONTS */
+    --textfont: "Roboto";
+
+    /* COLORS */
+    --darkmode: rgb(15, 15, 15);
+    --darkmode2: rgb(25, 25, 25);
+    --darkmode3: rgb(35, 35, 35);
+    --textcolor: whitesmoke;
+    --hovercolor: rgb(200, 0, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkmode);
+}
+
+/* SCROLL BAR ------------------------------------------------------------------------ */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--darkmode2); 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--hovercolor);
+    border-radius: 25px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(200, 0, 255, 0.5); 
+}
+
+/* NAVBAR AND LOGO ------------------------------------------------------------------------ */
+nav{
+    background-color: var(--darkmode);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 2vh;
+    width: 16vw;
+    margin-right: auto;
+}
+
+ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin: 0 2.5vw;  
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--textcolor);
+    font-family: var(--textfont);
+    font-size: large;
+    transition: all ease-in-out .125s;
+}
+
+nav a:hover{
+    color: var(--hovercolor);
+}
+
+/* RESUME CONTENT NEW ------------------------------------------------------------------------ */
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.resume-container hr {
+    color: var(--hovercolor);
+    background-color: var(--hovercolor);
+    border: solid 3px var(--hovercolor);
+}
+
+.resume-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--darkmode2);
+    color: var(--textcolor);
+    font-family: var(--textfont);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.resume-header {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.resume-header > .left{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vw;
+    border-radius: 0 25px 0 0;
+    background-color: var(--darkmode3);
+    padding-left: 2vw;
+}
+
+.resume-banner {
+    width: 70vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--hovercolor);
+}
+
+.resume-banner a {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.resume-body {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-body > .left > div{
+    margin-left: 2vw;
+}
+
+.left {
+    width: 20vw;
+}
+
+.left hr {
+    width: 4vw;
+    margin: 0.25em 0;
+}
+
+.left > div {
+    margin-top: 1em;
+}
+
+.resume-edu > div:not(:first-of-type) {
+    margin-top: 1em;
+}
+
+.right {
+    width: 50vw;
+}
+
+.right hr {
+    width: 4vw;
+    margin: 0.25em 0;
+}
+
+.resume-body > .right {
+    background-color: var(--darkmode3);
+    border-radius: 0 0 25px 0;
+}
+
+.resume-body > .right > div {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.right > div {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.resume-experience div {
+    margin-top: 1em;
+}
+
+.resume-experience > div hr {
+    width: 45vw;
+    border: solid 1px rgb(100, 100, 100);
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* NAVBAR AND LOGO ------------------------------------------------------------------------ */
+    nav{
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 70vw;
+    } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+:root {
+    /* FONTS */
+    --textfont: "Roboto";
+
+    /* COLORS */
+    --darkmode: rgb(15, 15, 15);
+    --darkmode2: rgb(25, 25, 25);
+    --textcolor: whitesmoke;
+    --hovercolor: rgb(200, 0, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--textfont);
+}
+
+body {
+    background-color: var(--darkmode);
+}
+
+/* SCROLL BAR ------------------------------------------------------------------------ */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--darkmode2); 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--hovercolor);
+    border-radius: 25px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(200, 0, 255, 0.5); 
+}
+
+/* NAVBAR AND LOGO ------------------------------------------------------------------------ */
+nav{
+    background-color: var(--darkmode);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 2vh;
+    width: 16vw;
+    margin-right: auto;
+}
+
+ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin: 0 2.5vw;  
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--textcolor);
+    font-family: var(--textfont);
+    font-size: large;
+    transition: all ease-in-out .125s;
+}
+
+nav a:hover{
+    color: var(--hovercolor);
+}
+
+/* NAVBAR AND LOGO ------------------------------------------------------------------------ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #1E1E1E;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    border-radius: 25px;
+    margin-top: 15vh;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    margin-top: 1em;
+    align-self: stretch;
+    border: 1px solid #9C27B0;
+}
+
+.profile img {
+    width: 45vw;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 1em;
+    width: 50vw;
+}
+
+.item a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: #9C27B0;
+}
+
+.bottom-item {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--textcolor);
+    margin-left: 2em;
+}
+
+.contact-info hr {
+    margin: 0.5em 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: var(--textcolor);
+    margin: 0.5em 0;
+}
+
+/* MODAL ------------------------------------------------------------------------ */
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.modal-content {
+    color: var(--textcolor);
+    background-color: var(--textcolor);
+    width: 50vw;
+    height: 50vh;
+    margin-left: 25vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--darkmode);
+}
+
+.modal-content > h2 {
+    font-size: 4em;
+    margin: 1em;
+}
+
+.modal-content > h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.show-modal {
+    display: block;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* NAVBAR AND LOGO ------------------------------------------------------------------------ */
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        width: 70vw;
+    }  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .profile img {
+        width: 40vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
