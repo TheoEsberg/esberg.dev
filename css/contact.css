@@ -183,6 +183,15 @@ hr {
     .profile img {
         width: 40vw;
     }
+
+    .container {
+        width: 45vw;
+        margin: auto;
+    }
+
+    .item, .profile, .small-divider {
+        width: 40vw;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
