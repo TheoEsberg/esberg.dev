@@ -1,39 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theo Esberg | Home</title>
-    <link rel="stylesheet" href="css/home.css">
-</head>
-<body>
-
-<header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/core/constants.css" />
+    <link rel="stylesheet" href="css/core/navbar-darkmode.css" />
+    <link rel="stylesheet" href="css/home/header.css" />
+    <link rel="stylesheet" href="css/home/cards.css" />
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <title>Theo Esberg</title>
+    <meta
+      name="description"
+      content="This is Theo Esbergs personal portfolio website. Here you can find some of his programming projects. If you want to hire or contact him Theo Esbergs contact information is also here."
+    />
+  </head>
+  <body>
     <nav>
-        <a href="index.html"><img class="logo" src="img/Logo/esberg-low-resolution-logo-white-on-transparent-background.png" alt="logo"></a>
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+      <!-- Navigation goes here -->
+      <img class="logo" alt="My logotype for this website." />
+      <ul>
+        <li>
+          <a href="#" aria-label="This websites navigation to the home page"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" aria-label="This websites navigation to the projects page"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#" aria-label="This websites navigation to the contact page"
+            >Contact</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="downloads/TheoEsberg-Systemutvecklare-CV.pdf"
+            aria-label="Download my CV"
+            download
+            >Download CV</a
+          >
+        </li>
+      </ul>
+      <button id="theme-switch">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e8eaed"
+          aria-label="This is the moon-icon for the button that toggle the darkmode on and off."
+        >
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e8eaed"
+          aria-label="This is the sun-icon for the button that toggle the darkmode on and off."
+        >
+          <path
+            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+          />
+        </svg>
+      </button>
     </nav>
 
-    <div class="welcome-container">
-        <div class="welcome-text-container">
-            <div class="welcome-text">
-                <h2>Hello!</h2>
-                <h1>I am Theo</h1> <hr>
-                <p>Welcome to my personal website created entierly by me. My name is Theo Esberg and I am a 20 years old system developer from Sweden. On this website you can find my projects, ideas, resume and much more. </p>
-            </div>
+    <header>
+      <div class="about-me">
+        <h1>Hello, I’m <span>Theo</span></h1>
+        <div class="profile">
+          <img src="img/me-close.jpg" alt="A close-up photo of me." />
+          <h2>
+            I'm a <span>Software Developer</span> stationed in Halland, Sweden.
+          </h2>
+          <p>
+            I created this website as a portfolio website for people that are
+            interested in what I do and to document my journey.
+          </p>
         </div>
-        <div class="welcome-text"></div>
-        <div class="welcome-image">
-            <img src="img/me.jpg" alt="A picture of me">
-        </div>
-    </div>
+      </div>
+    </header>
 
-</header>
-</body>
+    <main>
+      <!-- PROGRAMMING -->
+      <section class="cards">
+        <header>
+          <h2>Programming projects</h2>
+        </header>
+        <div class="cards-list">
+          <!-- INSERT CARDS BELOW HERE -->
+          <div class="card">
+            <div class="thumbnail">
+              <img
+                alt="A picture of a farming game I made in Pygame"
+                src="img/projects/farming-game.png"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Farming game made with Pygame</h3>
+              <p>
+                This project was made after the "Pykemon" game in the course
+                "Programming 2". This time I was not about to go to the extremes
+                as previously, therefore I made quite a smaller game. This game
+                where suppossed to be all a bout farming.I implemented a player
+                with gridbased movement, tilemaps from a program called tiled, a
+                camera that follows the player and made a light system. But the
+                game did not get so far since I got a lot of different
+                schoolwork to do that year. I am proud of what I did since I
+                also made all the art myself.
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://github.com/TheoEsberg/Python-Farming-Game"
+                  aria-label="A link to view this project on GitHub"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  href="#"
+                  aria-label="A navigation on this website to read more about this project"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Here begins the first card -->
+          <div class="card">
+            <div class="thumbnail">
+              <img
+                alt="A picture of a game I made in Pygame called Pykemon"
+                src="img/projects/pykemon.png"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Pygame called Pykemon</h3>
+              <p>
+                This is a project that I made in a course called "Programming 1"
+                during my school years. It was a game made in Python using
+                Pygame that was supposed to be more or less a copy of Pokemon,
+                hence the name "Pykemon". I got to say that this was one of my
+                favorite programming projects to this day and it thought me a
+                lot of great things that have stuck with me through the years.
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://github.com/TheoEsberg/Pykemon"
+                  aria-label="A link to view this project on GitHub"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  href="#"
+                  aria-label="A navigation on this website to read more about this project"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Here ends the first card -->
+        </div>
+      </section>
+
+      <!-- WEBSITES -->
+      <section class="cards">
+        <header>
+          <h2>Websites for companies</h2>
+        </header>
+        <div class="cards-list">
+          <!-- INSERT CARDS BELOW HERE -->
+          <div class="card">
+            <div class="thumbnail">
+              <img
+                alt="A picture of the website lillathailand.se"
+                src="img/projects/lillathailand.jpg"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Website for Lillathailand.se</h3>
+              <p>
+                Lillathailand is a foodtruck in Sweden that reached out to me
+                and asked if I could create the most simple website in the
+                shortest amount of time. They just wanted to show a few images
+                of their menu and thats it. So I made a small and simple website
+                that does just that, display some images.
+              </p>
+              <div class="button-container">
+                <a
+                  href="http://www.lillathailand.se"
+                  aria-label="A link to view to see this project"
+                  target="_blank"
+                  >Visit Page</a
+                >
+                <a
+                  href="#"
+                  aria-label="A navigation on this website to read more about this project"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumbnail">
+              <img
+                alt="A picture of the website slitochslap.se"
+                src="img/projects/slitochslap.png"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Website for Slitochslap.se</h3>
+              <p>
+                This website was created for a company called Slit och Släp.
+                They wanted a simple site where you can see all of their
+                information and what they do. They also wanted the ability to
+                contact them from the site via a form.
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://www.slitochslap.se"
+                  aria-label="A link to view to see this project"
+                  target="_blank"
+                  >Visit Page</a
+                >
+                <a
+                  href="#"
+                  aria-label="A navigation on this website to read more about this project"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Here begins the first card -->
+          <div class="card">
+            <div class="thumbnail">
+              <img
+                alt="A picture of the website brannhult.se"
+                src="img/projects/brannhult.png"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Website for Brannhult.se</h3>
+              <p>
+                This website is made with HTML, CSS, JS and PHP. Some of its
+                features is a form that sends a formated email to the owner.
+                This website also have recaptcha implemented to prevent spams in
+                their form. It also features a simple portfolio that takes
+                images from his projects and automaticly adds them to the site.
+                I also got to add google maps implementation to see the company
+                location.
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://www.brannhult.se"
+                  aria-label="A link to view to see this project"
+                  target="_blank"
+                  >Visit Page</a
+                >
+                <a
+                  href="#"
+                  aria-label="A navigation on this website to read more about this project"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Here ends the first card -->
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

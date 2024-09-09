@@ -1,0 +1,64 @@
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  border: none;
+}
+
+#theme-switch svg {
+  fill: var(--textcolor);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+
+.logo {
+  max-width: 250px;
+  position: fixed;
+  left: 20px;
+  content: var(--logo);
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  border-bottom: 2px solid var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav > ul > li > a {
+  font-family: var(--font);
+  color: var(--textcolor);
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  border-bottom: 1px solid var(--textcolor);
+}
+
+body {
+  background-color: var(--background);
+}

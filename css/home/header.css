@@ -1,0 +1,46 @@
+.about-me {
+  width: auto;
+  margin: 100px 30%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  color: var(--textcolor);
+  font-family: var(--font);
+}
+
+.about-me > h1 {
+  font-family: var(--font);
+  font-size: var(--fs-h1);
+  font-weight: 900;
+}
+
+.profile {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile > h2 {
+  margin-left: 40px;
+  font-family: var(--font);
+  font-size: var(--fsm-h3);
+  font-weight: 600;
+}
+
+.profile > h2 > span {
+  color: var(--primary-color);
+}
+
+.profile > p {
+  margin-left: 20px;
+  color: var(--textcolor-secondary);
+}
