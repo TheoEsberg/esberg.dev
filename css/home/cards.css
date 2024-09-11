@@ -64,3 +64,30 @@
 .card-content h3 {
   font-size: var(--fs-h4);
 }
+
+@media only screen and (max-width: 992px) {
+  .cards h2 {
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 30px auto 60px auto;
+    border-radius: 15px;
+    background-color: var(--foreground);
+    padding-bottom: 30px;
+    /* overflow: hidden; */
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-content p {
+    margin: 10px 0;
+  }
+
+  .thumbnail > img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

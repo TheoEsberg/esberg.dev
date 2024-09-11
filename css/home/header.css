@@ -1,6 +1,6 @@
 .about-me {
   width: auto;
-  margin: 100px 30%;
+  margin: 75px 30%;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -43,4 +43,37 @@
 .profile > p {
   margin-left: 20px;
   color: var(--textcolor-secondary);
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me > h1 {
+    font-size: var(--fs-h3);
+  }
+
+  .about-me {
+    margin: 0px 5%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-me {
+    margin: 50px 5%;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile > h2 {
+    margin: 0;
+  }
+
+  .profile > p {
+    margin: 0;
+  }
 }

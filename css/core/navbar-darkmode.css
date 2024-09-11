@@ -7,9 +7,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  right: 20px;
   border: none;
+}
+
+#theme-switch:hover {
+  cursor: pointer;
 }
 
 #theme-switch svg {
@@ -28,10 +30,16 @@
   display: block;
 }
 
+.darkmode-div {
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
 .logo {
   max-width: 250px;
-  position: fixed;
-  left: 20px;
+  margin-left: 40px;
   content: var(--logo);
 }
 
@@ -40,7 +48,7 @@ nav {
   height: 120px;
   border-bottom: 2px solid var(--foreground);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -61,4 +69,34 @@ nav > ul > li > a:hover {
 
 body {
   background-color: var(--background);
+}
+
+.divider {
+  margin: 64px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .darkmode-div {
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    height: 100px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .darkmode-div {
+    width: auto;
+    margin-right: 5%;
+  }
+
+  .logo {
+    max-width: 225px;
+    margin-left: 5%;
+  }
 }

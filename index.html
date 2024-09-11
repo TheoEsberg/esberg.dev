@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/core/navbar-darkmode.css" />
     <link rel="stylesheet" href="css/home/header.css" />
     <link rel="stylesheet" href="css/home/cards.css" />
+    <link rel="stylesheet" href="css/home/contact.css" />
     <script type="text/javascript" src="js/darkmode.js" defer></script>
     <title>Theo Esberg</title>
     <meta
@@ -17,7 +18,11 @@
   <body>
     <nav>
       <!-- Navigation goes here -->
-      <img class="logo" alt="My logotype for this website." />
+      <a
+        href="#"
+        aria-label="This is a button to get to the main page of my website."
+        ><img class="logo" alt="My logotype for this website."
+      /></a>
       <ul>
         <li>
           <a href="#" aria-label="This websites navigation to the home page"
@@ -30,46 +35,41 @@
           >
         </li>
         <li>
-          <a href="#" aria-label="This websites navigation to the contact page"
+          <a
+            href="#contact"
+            aria-label="This websites navigation to the contact page"
             >Contact</a
           >
         </li>
-
-        <li>
-          <a
-            href="downloads/TheoEsberg-Systemutvecklare-CV.pdf"
-            aria-label="Download my CV"
-            download
-            >Download CV</a
-          >
-        </li>
       </ul>
-      <button id="theme-switch">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="32px"
-          viewBox="0 -960 960 960"
-          width="32px"
-          fill="#e8eaed"
-          aria-label="This is the moon-icon for the button that toggle the darkmode on and off."
-        >
-          <path
-            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="32px"
-          viewBox="0 -960 960 960"
-          width="32px"
-          fill="#e8eaed"
-          aria-label="This is the sun-icon for the button that toggle the darkmode on and off."
-        >
-          <path
-            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
-          />
-        </svg>
-      </button>
+      <div class="darkmode-div">
+        <button id="theme-switch">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e8eaed"
+            aria-label="This is the moon-icon for the button that toggle the darkmode on and off."
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e8eaed"
+            aria-label="This is the sun-icon for the button that toggle the darkmode on and off."
+          >
+            <path
+              d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+            />
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <header>
@@ -89,6 +89,103 @@
     </header>
 
     <main>
+      <div class="contact">
+        <h2>Let's work <span>together</span>!</h2>
+        <div class="contact-container">
+          <div class="contact-employer-info">
+            <p>
+              I am a young but passionate <span>software developer</span> with a
+              drive for programming. Whether it's developing web applications,
+              flutter application or another programming challange, I'm ready to
+              <span>bring my skills</span> to your team!
+            </p>
+            <br />
+            <p>
+              If this sounds interesting to you, take a quick look at my CV and
+              let's explore how I can contribute to
+              <span>your next project</span>!
+            </p>
+          </div>
+          <hr />
+          <div class="cv-download">
+            <a
+              href="downloads/TheoEsberg-Systemutvecklare-CV.pdf"
+              aria-label="Download my CV"
+              target="_blank"
+              download
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="112px"
+                viewBox="0 -960 960 960"
+                width="112px"
+                fill="#e8eaed"
+                aria-label="This is a icon for downloading my CV"
+              >
+                <path
+                  d="m720-120 160-160-56-56-64 64v-167h-80v167l-64-64-56 56 160 160ZM560 0v-80h320V0H560ZM240-160q-33 0-56.5-23.5T160-240v-560q0-33 23.5-56.5T240-880h280l240 240v121h-80v-81H480v-200H240v560h240v80H240Zm0-80v-560 560Z"
+                />
+              </svg>
+            </a>
+            <p>Download my CV here!</p>
+          </div>
+        </div>
+        <div class="contact-info" id="contact">
+          <h3><span>Contact</span> information</h3>
+          <div class="contact-info-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+              />
+            </svg>
+            <p>I'm happy to share my number via email</p>
+          </div>
+          <div class="contact-info-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+              />
+            </svg>
+            <a
+              href="ma&#105;l&#116;o&#58;&#116;&#37;&#54;8%65&#37;&#54;&#70;&#64;esb%6&#53;r%&#54;7&#46;%&#54;4ev"
+              aria-label="A way to contact me via mail"
+              >&#116;heo&#64;esberg&#46;&#100;&#101;v</a
+            >
+          </div>
+          <div class="contact-info-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M480-360q56 0 101-27.5t71-72.5q-35-29-79-44.5T480-520q-49 0-93 15.5T308-460q26 45 71 72.5T480-360Zm0-200q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0 374q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+              />
+            </svg>
+            <a
+              href="https://maps.app.goo.gl/9ZhePnDPiYJEJvUa9"
+              aria-label="A link to google maps to show where Halland is in Sweden"
+              target="_blank"
+              >Halland, Sweden</a
+            >
+          </div>
+        </div>
+      </div>
+
       <!-- PROGRAMMING -->
       <section class="cards">
         <header>
@@ -174,33 +271,31 @@
       <!-- WEBSITES -->
       <section class="cards">
         <header>
-          <h2>Websites for companies</h2>
+          <h2>Websites</h2>
         </header>
         <div class="cards-list">
           <!-- INSERT CARDS BELOW HERE -->
           <div class="card">
             <div class="thumbnail">
               <img
-                alt="A picture of the website lillathailand.se"
-                src="img/projects/lillathailand.jpg"
+                alt="A picture of my website esberg.dev"
+                src="img/projects/esberg-dev.png"
                 loading="lazy"
               />
             </div>
             <div class="card-content">
-              <h3>Website for Lillathailand.se</h3>
+              <h3>Esberg.dev</h3>
               <p>
-                Lillathailand is a foodtruck in Sweden that reached out to me
-                and asked if I could create the most simple website in the
-                shortest amount of time. They just wanted to show a few images
-                of their menu and thats it. So I made a small and simple website
-                that does just that, display some images.
+                This is my own website that I made to show the projects that I
+                have done. It also have the purpose for people that want to work
+                together to see my work and contact me.
               </p>
               <div class="button-container">
                 <a
-                  href="http://www.lillathailand.se"
-                  aria-label="A link to view to see this project"
+                  href="https://github.com/TheoEsberg/esberg.dev"
+                  aria-label="A link this projects GitHub"
                   target="_blank"
-                  >Visit Page</a
+                  >Github</a
                 >
                 <a
                   href="#"
