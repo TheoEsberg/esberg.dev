@@ -1,39 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theo Esberg | Home</title>
-    <link rel="stylesheet" href="css/home.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Theo Esberg – Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Theo Esberg – .NET Systemutvecklare & Software Developer based in Sweden."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="logo">
+          <img
+            src="img/me-close.jpg"
+            alt="Logo for Theo Esberg"
+            class="logo-mark-img"
+          />
+          <span class="logo-text">Theo Esberg</span>
+        </a>
 
-<header>
-    <nav>
-        <a href="index.html"><img class="logo" src="img/Logo/esberg-low-resolution-logo-white-on-transparent-background.png" alt="logo"></a>
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#github">GitHub</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <div class="welcome-container">
-        <div class="welcome-text-container">
-            <div class="welcome-text">
-                <h2>Hello!</h2>
-                <h1>I am Theo</h1> <hr>
-                <p>Welcome to my personal website created entierly by me. My name is Theo Esberg and I am a 20 years old system developer from Sweden. On this website you can find my projects, ideas, resume and much more. </p>
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-kicker">Systemutvecklare .NET • Sweden</p>
+            <h1>Hello, I’m Theo.</h1>
+            <p class="hero-subtitle">
+              I’m a software developer based in Halland, Sweden. I build web
+              applications, .NET backends and mobile apps – and I love learning
+              new things.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">View my work</a>
+              <a href="#contact" class="btn ghost">Get in touch</a>
             </div>
-        </div>
-        <div class="welcome-text"></div>
-        <div class="welcome-image">
-            <img src="img/me.jpg" alt="A picture of me">
-        </div>
-    </div>
 
-</header>
-</body>
+            <div class="hero-meta">
+              <span>📍 Varberg, SE</span>
+              <span
+                >📧 <a href="mailto:theo@esberg.dev">theo@esberg.dev</a></span
+              >
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <img
+              src="img/me-close.jpg"
+              alt="Portrait of Theo Esberg"
+              class="hero-avatar"
+            />
+            <p class="hero-card-title">Available for opportunities</p>
+            <p class="hero-card-text">
+              Looking for roles in .NET / backend, full-stack, or Flutter
+              development.
+            </p>
+            <a
+              href="/downloads/TheoEsberg-Systemutvecklare-CV.pdf"
+              class="btn full-width"
+              target="_blank"
+              rel="noopener"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container section-inner two-column">
+          <div>
+            <h2>About me</h2>
+            <p>
+              I’m a 23-year-old software developer from Varberg with a passion
+              for building things – from games and apps to websites and backend
+              systems.
+            </p>
+            <p>
+              I’ve studied <strong>Systemutveckling .NET</strong> and have
+              hands-on experience working with real clients, delivering features
+              like BankID integration, Flutter apps, and modern web solutions.
+            </p>
+            <p>
+              Outside of coding you’ll usually find me experimenting with new
+              side projects.
+            </p>
+          </div>
+
+          <div>
+            <h3>Currently</h3>
+            <ul class="list">
+              <li>Exploring <strong>.NET</strong></li>
+              <li>Building apps with <strong>Flutter</strong></li>
+              <li>
+                Messing around with different
+                <strong>Programming</strong> languages
+              </li>
+              <li>Experimenting with game development and tools</li>
+            </ul>
+
+            <div class="about-links">
+              <a href="https://esberg.dev" target="_blank" rel="noopener"
+                >Personal site</a
+              >
+              <a
+                href="https://www.linkedin.com/in/theo-esberg-6ba591226"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <!-- Replace with your real GitHub profile URL -->
+              <a
+                href="https://github.com/TheoEsberg"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Languages & Frameworks</h3>
+              <ul class="tag-list">
+                <li>C#</li>
+                <li>.NET</li>
+                <li>ASP.NET</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Dart</li>
+                <li>Flutter</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Tools</h3>
+              <ul class="tag-list">
+                <li>Visual Studio</li>
+                <li>VS Code</li>
+                <li>SSMS</li>
+                <li>Git &amp; GitHub</li>
+                <li>SourceTree</li>
+                <li>Pivotal Tracker</li>
+                <li>Slack</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Soft skills</h3>
+              <ul class="tag-list">
+                <li>Problem solving</li>
+                <li>Self-driven learning</li>
+                <li>Team communication</li>
+                <li>Customer focus</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured projects</h2>
+            <p>Some projects I’m proud of.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>Flutter MTG Scanner</h3>
+              <p>
+                A Flutter experiment for a Magic: The Gathering helper app. The
+                goal is to explore Flutter, state management and platform
+                integration for building a smooth, cross-platform mobile
+                experience.
+              </p>
+              <div class="project-meta">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Mobile</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/TheoEsberg/flutter_mtg_scanner"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View code
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Brannhult A-Traktorer</h3>
+              <p>
+                Portfolio website with an automatically populated gallery and
+                Google Maps integration for a local business.
+              </p>
+              <div class="project-meta">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://brannhult.se" target="_blank" rel="noopener"
+                  >Visit site</a
+                >
+                <!-- Replace with actual repo link -->
+                <a href="#" target="_blank" rel="noopener">View code</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>FlappyBird – NEAT</h3>
+              <p>
+                A Flappy Bird clone where an AI learns to play the game using
+                the NEAT algorithm. I implemented the game in Python and wired
+                it up to a neuroevolution setup that evolves better birds over
+                generations.
+              </p>
+              <div class="project-meta">
+                <span>Python</span>
+                <span>NEAT</span>
+                <span>Pygame</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/TheoEsberg/FlappyBird-NEAT"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View code
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Pykemon (Pygame)</h3>
+              <p>
+                A Pokémon-inspired game built in Python with Pygame. This was
+                one of my first big programming projects and taught me a lot.
+              </p>
+              <div class="project-meta">
+                <span>Python</span>
+                <span>Pygame</span>
+              </div>
+              <div class="project-links">
+                <!-- Replace with actual repo link -->
+                <a href="#" target="_blank" rel="noopener">View code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GitHub section (auto fetch) -->
+      <section class="section" id="github">
+        <div class="container">
+          <div class="section-header">
+            <h2>Latest from GitHub</h2>
+            <p>Automatically loaded from my public repositories.</p>
+          </div>
+
+          <div
+            class="projects-grid"
+            id="githubRepos"
+            data-github-username="TheoEsberg"
+          >
+            <p class="muted">Loading repositories from GitHub…</p>
+          </div>
+
+          <div class="github-footer">
+            <!-- Replace with your GitHub URL -->
+            <a
+              href="https://github.com/TheoEsberg"
+              target="_blank"
+              rel="noopener"
+              class="btn ghost"
+            >
+              View full GitHub profile
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container contact-inner">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              Want to talk about a project, a role, or just say hej? Drop me a
+              message and I’ll get back to you.
+            </p>
+
+            <ul class="list">
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:theo@esberg.dev">theo@esberg.dev</a>
+              </li>
+              <li><strong>Location:</strong> Varberg, Halland, Sweden</li>
+            </ul>
+
+            <a
+              href="/downloads/TheoEsberg-Systemutvecklare-CV.pdf"
+              class="btn"
+              target="_blank"
+              rel="noopener"
+            >
+              Download CV (PDF)
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <p class="form-hint">
+              This form opens your email client and pre-fills the message – no
+              data is stored on this site.
+            </p>
+
+            <button type="submit" class="btn primary full-width">
+              Send email
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Theo Esberg. All rights reserved.</p>
+        <p class="muted">Built with HTML, CSS &amp; a little JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
