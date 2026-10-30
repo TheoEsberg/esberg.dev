@@ -1,0 +1,34 @@
+name: Kontrollera matchschema
+on:
+  schedule:
+    - cron: '0 0,8,16 * * *'
+      timezone: 'Europe/Stockholm'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: match-updater
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installera paket
+        run: pip install -r hockey/requirements.txt
+      - name: Kontrollera IIHF
+        run: python hockey/scripts/update_matches.py
+      - name: Spara verifierade ändringar
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add hockey/data/matches.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Uppdatera verifierat matchschema'
+            git push
+          fi
