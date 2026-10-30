@@ -1,6 +1,6 @@
 {
   "lastUpdated": null,
-  "sourceCheckedAt": null,
+  "sourceCheckedAt": "2026-10-30T15:49:39Z",
   "matches": [
     {
       "id": "m1",
@@ -266,7 +266,7 @@
       "tv": "TV/streaming ej matchbekräftad",
       "source": "https://stats.iihf.com/Hydra/985/index.html",
       "startUtc": "2027-05-14T14:20:00Z",
-      "sourceStatus": "IIHF spelschema"
+      "sourceStatus": "IIHF kontrollerad automatiskt"
     },
     {
       "id": "m20",
@@ -280,7 +280,7 @@
       "tv": "TV/streaming ej matchbekräftad",
       "source": "https://stats.iihf.com/Hydra/985/index.html",
       "startUtc": "2027-05-16T10:20:00Z",
-      "sourceStatus": "IIHF spelschema"
+      "sourceStatus": "IIHF kontrollerad automatiskt"
     },
     {
       "id": "m21",
@@ -294,7 +294,7 @@
       "tv": "TV/streaming ej matchbekräftad",
       "source": "https://stats.iihf.com/Hydra/985/index.html",
       "startUtc": "2027-05-17T14:20:00Z",
-      "sourceStatus": "IIHF spelschema"
+      "sourceStatus": "IIHF kontrollerad automatiskt"
     },
     {
       "id": "m22",
@@ -308,7 +308,7 @@
       "tv": "TV/streaming ej matchbekräftad",
       "source": "https://stats.iihf.com/Hydra/985/index.html",
       "startUtc": "2027-05-20T14:20:00Z",
-      "sourceStatus": "IIHF spelschema"
+      "sourceStatus": "IIHF kontrollerad automatiskt"
     },
     {
       "id": "m23",
@@ -322,7 +322,7 @@
       "tv": "TV/streaming ej matchbekräftad",
       "source": "https://stats.iihf.com/Hydra/985/index.html",
       "startUtc": "2027-05-21T18:20:00Z",
-      "sourceStatus": "IIHF spelschema"
+      "sourceStatus": "IIHF kontrollerad automatiskt"
     },
     {
       "id": "m24",
@@ -336,7 +336,7 @@
       "tv": "TV/streaming ej matchbekräftad",
       "source": "https://stats.iihf.com/Hydra/985/index.html",
       "startUtc": "2027-05-23T18:20:00Z",
-      "sourceStatus": "IIHF spelschema"
+      "sourceStatus": "IIHF kontrollerad automatiskt"
     },
     {
       "id": "m25",
@@ -350,7 +350,7 @@
       "tv": "TV/streaming ej matchbekräftad",
       "source": "https://stats.iihf.com/Hydra/985/index.html",
       "startUtc": "2027-05-25T18:20:00Z",
-      "sourceStatus": "IIHF spelschema"
+      "sourceStatus": "IIHF kontrollerad automatiskt"
     }
   ],
   "plans": [
