@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="sv">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#091526" name="theme-color"/>
+  <meta content="Tre Kronor Matchcenter &ndash; matcher, spelschema, TV och streaming f&ouml;r Tre Kronor herr, dam och Juniorkronorna 2026/2027." name="description"/>
+  <title>
+   Tre Kronor Matchcenter | 2026/2027
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Outfit:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/app.js">
+  </script>
+ </head>
+ <body>
+  <header>
+   <div class="wrap nav">
+    <a class="brand" href="#start">
+     <span class="emblem">
+      <span class="swflag">
+      </span>
+     </span>
+     <span>
+      <strong>
+       TRE KRONOR
+      </strong>
+      <small>
+       MATCHCENTER 2026/27
+      </small>
+     </span>
+    </a>
+    <nav class="toplinks">
+     <a class="active" href="#matcher">
+      Matcher
+     </a>
+     <a href="#planerat">
+      Turneringar
+     </a>
+     <a href="#om">
+      Om sidan
+     </a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+     <span class="updated">
+      Senaste datakontroll: se status nedan
+     </span>
+     <button aria-label="V&auml;xla tema" id="theme" title="V&auml;xla ljust/m&ouml;rkt l&auml;ge">
+      ☼
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="wrap" id="start">
+   <section class="hero">
+    <div class="eyebrow">
+     ✦ SVERIGES LANDSLAG &middot; S&Auml;SONGEN 2026 / 2027
+    </div>
+    <h1>
+     All hockey.
+     <br/>
+     <span>
+      Ett st&auml;lle.
+     </span>
+    </h1>
+    <p>
+     F&ouml;lj Tre Kronor herr, Tre Kronor dam och Juniorkronorna. Matcher, avslagstider, TV och streaming &mdash; snyggt samlat med l&auml;nkar till officiella k&auml;llor.
+    </p>
+   </section>
+   <div class="stats">
+    <div class="stat">
+     <div class="label">
+      N&Auml;STA MATCH
+      <span>
+       &nearrow;
+      </span>
+     </div>
+     <div class="val" id="nextDate">
+      &mdash;
+     </div>
+     <div class="hint" id="nextTeam">
+      Kontrollerar spelschemat
+     </div>
+    </div>
+    <div class="stat">
+     <div class="label">
+      KOMMANDE MATCHER
+      <span>
+       ◷
+      </span>
+     </div>
+     <div class="val" id="upcomingCount">
+      &mdash;
+     </div>
+     <div class="hint">
+      Publicerade kommande matcher
+     </div>
+    </div>
+    <div class="stat">
+     <div class="label">
+      SPELADE / PASSERADE
+      <span>
+       ◷
+      </span>
+     </div>
+     <div class="val" id="pastCount">
+      &mdash;
+     </div>
+     <div class="hint">
+      Tidigare matchstarter i schemat
+     </div>
+    </div>
+   </div>
+   <section class="next" id="nextMatch">
+    <div>
+     <div class="eyebrow">
+      ● N&Auml;STA BEKR&Auml;FTADE MATCH
+     </div>
+     <h2 id="nextTitle">
+      H&auml;mtar n&auml;sta match
+     </h2>
+     <p id="nextSubtitle">
+     </p>
+    </div>
+    <div class="right">
+     <div class="countdown" id="countdown">
+     </div>
+     <button onclick="document.getElementById('matcher').scrollIntoView({behavior:'smooth'})">
+      Se alla matcher &nearrow;
+     </button>
+    </div>
+   </section>
+   <section id="matcher">
+    <div class="section-heading">
+     <div>
+      <h2>
+       Matchschema
+       <span style="color:var(--yellow)">
+        2026/27
+       </span>
+      </h2>
+      <p>
+       Alla angivna tider visas i svensk tid (Stockholm).
+      </p>
+     </div>
+     <div class="minor" id="shownCount">
+     </div>
+    </div>
+    <div class="filters">
+     <div class="tabs" id="teamTabs">
+      <button class="tab selected" data-team="alla">
+       Alla landslag
+      </button>
+      <button class="tab" data-team="herr">
+       Tre Kronor Herr
+      </button>
+      <button class="tab" data-team="dam">
+       Tre Kronor Dam
+      </button>
+      <button class="tab" data-team="junior">
+       Juniorkronorna
+      </button>
+     </div>
+     <div class="controls">
+      <input aria-label="S&ouml;k matcher" id="search" placeholder="&telrec;  S&ouml;k lag, turnering eller ort..."/>
+      <select aria-label="Matchstatus" id="status">
+       <option value="alla">
+        Alla matcher
+       </option>
+       <option value="kommande">
+        Kommande
+       </option>
+       <option value="spelade">
+        Tidigare matcher
+       </option>
+      </select>
+      <select aria-label="Turnering" id="tournament">
+       <option value="alla">
+        Alla turneringar
+       </option>
+      </select>
+      <select aria-label="Sortering" id="sort">
+       <option value="asc">
+        Datum: tidigast f&ouml;rst
+       </option>
+       <option value="desc">
+        Datum: senast f&ouml;rst
+       </option>
+      </select>
+      <button class="reset" id="reset">
+       &Aring;terst&auml;ll
+      </button>
+      <button class="calendar-all" id="allCalendar" type="button">
+       ▦ L&auml;gg alla kommande i kalendern
+      </button>
+      <button class="calendar-all secondary" id="filteredCalendar" type="button">
+       L&auml;gg synliga kommande i kalendern
+      </button>
+     </div>
+    </div>
+    <div class="micro-note">
+     🇸🇪 Sveriges matcher &middot; 🇫🇮 Finland &middot; 🇨🇿 Tjeckien &middot; 🇨🇭 Schweiz &mdash; flaggor visas &auml;ven f&ouml;r &ouml;vriga motst&aring;ndare.
+     <span id="clockNow">
+     </span>
+    </div>
+    <div id="matches">
+    </div>
+    <p class="notice">
+     ℹ Matcherna &auml;r baserade p&aring; publicerade scheman, inte en direktsynkroniserad resultat- eller TV-databas. En match som redan spelats visas utan slutresultat om resultatet inte har verifierats. Uppgifter kan &auml;ndras &mdash; kontrollera g&auml;rna k&auml;llan f&ouml;re avslag.
+    </p>
+   </section>
+   <section class="planned" id="planerat">
+    <div class="section-heading">
+     <div>
+      <h2>
+       P&aring; g&aring;ng
+       <span style="color:var(--yellow)">
+        2027
+       </span>
+      </h2>
+      <p>
+       Bekr&auml;ftade turneringar d&auml;r Sveriges enskilda matcher &auml;nnu inte &auml;r f&auml;rdigpublicerade.
+      </p>
+     </div>
+    </div>
+    <div class="plan-grid" id="plans">
+    </div>
+   </section>
+  </main>
+  <footer id="om">
+   <div class="wrap footerline">
+    <span>
+     🇸🇪 TRE KRONOR MATCHCENTER &middot; Oberoende supportersida &middot; Ej officiell landslagssida
+    </span>
+    <span>
+     Data h&auml;mtad och kontrollerad 30 oktober 2026 &middot;
+     <a class="footlink" href="https://www.swehockey.se/" rel="noopener noreferrer" target="_blank">
+      Svenska Ishockeyf&ouml;rbundet &nearrow;
+     </a>
+    </span>
+   </div>
+  </footer>
+  <p class="data-status" id="dataStatus" role="status">
+   Matchdata laddas&hellip;
+  </p>
+ </body>
+</html>
